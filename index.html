@@ -1,10 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <title>Cutie Devs Kickoff Meeting</title>
     <link rel="icon" href="mascot.png" />
     <link rel="stylesheet" href="styles.css" />
-    <meta name="description" content="Cutie Devs Kickoff Meeting Notes">
+    <meta name="description" content="Cutie Devs Kickoff Meeting Notes" />
+    <style>
+      /* Internal CSS */
+      #norms h1 {
+        color: #2c3e50;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -13,14 +19,12 @@
       <h3>Date: <em>April 11, 2026</em></h3>
 
       <h2>Cutie Devs Intro</h2>
-      <img src="logo.png" width="250" alt="Cutie Devs Logo"/><br />
+      <img src="logo.png" width="250" alt="Cutie Devs Logo" /><br />
       <video src="teamintro.mp4" width="250" controls></video>
 
       <nav>
-        <a href="#attendees">Attendees</a> |
-        <a href="#agenda">Agenda</a> |
-        <a href="#roles">Roles</a> |
-        <a href="#norms">Team Norms</a> |
+        <a href="#attendees">Attendees</a> | <a href="#agenda">Agenda</a> |
+        <a href="#roles">Roles</a> | <a href="#norms">Team Norms</a> |
         <a href="#acknowledgements">Acknowledgements</a>
       </nav>
     </header>
@@ -28,140 +32,176 @@
     <main>
       <section id="attendees">
         <div>
-            <h1>Attendees</h1>
-            <h2>Present</h2>
-            <ul>
-                <li>Jordan</li>
-                <li>Yuval</li>
-                <li>Angelo</li>
-                <li>Bowen</li>
-                <li>Roy</li>
-                <li>Jenny</li>
-                <li>Koji</li>
-                <li>Fariba</li>
-                <li>Alec</li>
-                <li>Harvey</li>
-            </ul>
+          <h1>Attendees</h1>
+          <h2>Present</h2>
+          <ul>
+            <li class="team-lead">Jordan</li>
+            <li class="team-lead">Yuval</li>
+            <li>Angelo</li>
+            <li>Bowen</li>
+            <li>Roy</li>
+            <li>Jenny</li>
+            <li>Koji</li>
+            <li>Fariba</li>
+            <li>Alec</li>
+            <li>Harvey</li>
+          </ul>
         </div>
         <div>
-            <h2>Absent</h2>
-            <ul>
-                <li>None</li>
-            </ul>
+          <h2>Absent</h2>
+          <ul>
+            <li>None</li>
+          </ul>
         </div>
       </section>
-      <hr>
+      <hr />
       <section id="agenda">
         <h2>Agenda</h2>
         <ol>
-            <li>Introductions & icebreakers</li>
-            <li>Discuss team roles & responsibilities</li>
-            <li>Establish team norms & ground rules (input for team contract)</li>
-            <li>Make sure everyone is settled in the github and good to start the quarter</li>
-            <li>Acknowledgements</li>
+          <li>Introductions & icebreakers</li>
+          <li>Discuss team roles & responsibilities</li>
+          <li>Establish team norms & ground rules (input for team contract)</li>
+          <li>
+            Make sure everyone is settled in the github and good to start the
+            quarter
+          </li>
+          <li>Acknowledgements</li>
         </ol>
       </section>
       <section id="roles">
         <h1>Roles and Responsibilities</h1>
         <h2>Assigned Roles</h2>
         <ul>
-            <li><b>Team Lead / Project Manager:</b> Yuval and Jordan</li>
-            <li><b>Note Taker:</b> Roy</li>
-            <li><b>GitHub / Repo Admin:</b> Angelo and Bowen</li>
-            <li><b>Fullstack:</b> Koji</li>
-            <li><b>Frontend Lead:</b> Harvey Jenny</li>
-            <li><b>Backend Lead:</b> Alec and Angelo</li>
-            <li><b>QA / Testing Lead:</b> Roy and Alec</li>
-            <li><b>Design Lead:</b> Fariba</li>
+          <li><b>Team Lead / Project Manager:</b> Yuval and Jordan</li>
+          <li><b>Note Taker:</b> Roy</li>
+          <li><b>GitHub / Repo Admin:</b> Angelo and Bowen</li>
+          <li><b>Fullstack:</b> Koji</li>
+          <li><b>Frontend Lead:</b> Harvey Jenny</li>
+          <li><b>Backend Lead:</b> Alec and Angelo</li>
+          <li><b>QA / Testing Lead:</b> Roy and Alec</li>
+          <li><b>Design Lead:</b> Fariba</li>
         </ul>
-        <p><i>Note: These roles do not strictly limit what you can/will work on</i></p>
+        <p style="font-size: 0.9em">
+          <i
+            >Note: These roles do not strictly limit what you can/will work
+            on</i
+          >
+        </p>
       </section>
       <section id="norms">
         <h1>Team Norms and Ground Rules</h1>
         <details>
-            <summary>How will we handle getting assignments done on time?</summary>
-            Set hard deadlines for all of us, check in with each other throughout the week, quick talks on 
-            Tuesday/Fridays after class, check in on Fridays before the weekend
+          <summary>
+            How will we handle getting assignments done on time?
+          </summary>
+          Set hard deadlines for all of us, check in with each other throughout
+          the week, quick talks on Tuesday/Fridays after class, check in on
+          Fridays before the weekend
         </details>
         <details>
-            <summary>How will we handle disagreements?</summary>
-            Try to make sure it never gets personal, try to get like another perspective in the loop and see if there is any compromise anywhere
+          <summary>How will we handle disagreements?</summary>
+          Try to make sure it never gets personal, try to get like another
+          perspective in the loop and see if there is any compromise anywhere
         </details>
         <details>
-            <summary>How will we handle a teammate who isn't pulling their weight?</summary>
-            Possibly switch the roles, switch to something that they are better at / enjoy doing more
+          <summary>
+            How will we handle a teammate who isn't pulling their weight?
+          </summary>
+          Possibly switch the roles, switch to something that they are better at
+          / enjoy doing more
         </details>
         <details>
-            <summary>Code review expectations (e.g., 1 reviewer required before merge)</summary>
-            Pull requests with 1 reviewer before merge
+          <summary>
+            Code review expectations (e.g., 1 reviewer required before merge)
+          </summary>
+          Pull requests with 1 reviewer before merge
         </details>
       </section>
 
       <section id="acknowledgements">
         <h1>Acknowledgements</h1>
-        <p>Please fill out the following form to acknowledge your participation in the meeting:</p>
+        <p>
+          Please fill out the following form to acknowledge your participation
+          in the meeting:
+        </p>
         <form>
-            <fieldset>
-                <legend>Role</legend>
-                <input type="radio" id="team-lead" name="role" value="team-lead">
-                <label for="team-lead">Team Lead</label><br />
-                <input type="radio" id="team-member" name="role" value="team-member">
-                <label for="team-member">Team Member</label><br />
-                <input type="radio" id="other" name="role" value="other">
-                <label for="other">Other</label>
-            </fieldset>
-            <fieldset>
-                <legend>Which of the following are you interested in?</legend>
-                <input type="checkbox" id="frontend">
-                <label for="frontend">Frontend</label><br />
-                <input type="checkbox" id="backend">
-                <label for="backend">Backend</label><br />
-                <input type="checkbox" id="fullstack">
-                <label for="fullstack">Fullstack</label><br />
-                <input type="checkbox" id="qa">
-                <label for="qa">QA</label><br />
-                <input type="checkbox" id="devops">
-                <label for="devops">Devops</label><br />
-                <input type="checkbox" id="aiml">
-                <label for="aiml">AI/ML</label><br />
-            </fieldset>
-            
-            <label for="experience">How much dev experience do you have?</label><br />
-            <select id="experience">
-                <option value="None">None</option>
-                <option value="A little">A little</option>
-                <option value="A decent amount">A decent amount</option>
-                <option value="A lot">A lot</option>
-                <option value="I'm a pro">I'm a pro</option>
-            </select> <br />
+          <fieldset>
+            <legend>Role</legend>
+            <input type="radio" id="team-lead" name="role" value="team-lead" />
+            <label for="team-lead">Team Lead</label><br />
+            <input
+              type="radio"
+              id="team-member"
+              name="role"
+              value="team-member"
+            />
+            <label for="team-member">Team Member</label><br />
+            <input type="radio" id="other" name="role" value="other" />
+            <label for="other">Other</label>
+          </fieldset>
+          <fieldset>
+            <legend>Which of the following are you interested in?</legend>
+            <input type="checkbox" id="frontend" />
+            <label for="frontend">Frontend</label><br />
+            <input type="checkbox" id="backend" />
+            <label for="backend">Backend</label><br />
+            <input type="checkbox" id="fullstack" />
+            <label for="fullstack">Fullstack</label><br />
+            <input type="checkbox" id="qa" />
+            <label for="qa">QA</label><br />
+            <input type="checkbox" id="devops" />
+            <label for="devops">Devops</label><br />
+            <input type="checkbox" id="aiml" />
+            <label for="aiml">AI/ML</label><br />
+          </fieldset>
 
-            <label for="lang">What's your favorite programming language?</label><br />
-            <input type="text" id="lang" list="languages" /><br />
-            <datalist id="languages">
-                <option value="Python">
-                <option value="JavaScript">
-                <option value="TypeScript">
-                <option value="Java">
-                <option value="C++">
-                <option value="C">
-            </datalist> <br />
+          <label for="experience">How much dev experience do you have?</label
+          ><br />
+          <select id="experience">
+            <option value="None">None</option>
+            <option value="A little">A little</option>
+            <option value="A decent amount">A decent amount</option>
+            <option value="A lot">A lot</option>
+            <option value="I'm a pro">I'm a pro</option>
+          </select>
+          <br />
 
-            <label for="extra">Anything else you'd like to add?</label><br />
-            <textarea id="extra"></textarea><br />
+          <label for="lang">What's your favorite programming language?</label
+          ><br />
+          <input type="text" id="lang" list="languages" /><br />
+          <datalist id="languages">
+            <option value="Python"></option>
+            <option value="JavaScript"></option>
+            <option value="TypeScript"></option>
+            <option value="Java"></option>
+            <option value="C++"></option>
+            <option value="C"></option>
+          </datalist>
+          <br />
 
-            <label for="name">Enter your name:</label>
-            <input type="text" id="name" /><br />
+          <label for="extra">Anything else you'd like to add?</label><br />
+          <textarea id="extra"></textarea><br />
 
-            <label for="meeting-date">Enter the date:</label>
-            <input type="date" id="meeting-date" /><br />
+          <label for="name">Enter your name:</label>
+          <input type="text" id="name" /><br />
 
-            <button type="submit">Submit</button>
+          <label for="meeting-date">Enter the date:</label>
+          <input type="date" id="meeting-date" /><br />
+
+          <button type="submit">Submit</button>
         </form>
       </section>
     </main>
     <footer>
-        <p>Thank you for attending the meeting! The official meeting notes are available <a href="https://github.com/cse110-sp26-group16/cse110-sp26-group16/blob/main/admin/meetings/041126-kickoff.md">here</a></p>
-        <audio src="anime-wow-sound-effect.mp3" controls></audio>
+      <p>
+        Thank you for attending the meeting! The official meeting notes are
+        available
+        <a
+          href="https://github.com/cse110-sp26-group16/cse110-sp26-group16/blob/main/admin/meetings/041126-kickoff.md"
+          >here</a
+        >
+      </p>
+      <audio src="anime-wow-sound-effect.mp3" controls></audio>
     </footer>
   </body>
 </html>
